@@ -48,9 +48,20 @@ imagecopy($image,
     $watermarkWidth,
     $watermarkHeight);
 
+//download da imagem
+
+
+
 //Imprime a imagem na pagina
 
 header("Content-Type: image/png");
+
+//echo $image;
+
 imagepng($image);
 imagedestroy($image);
 imagedestroy($watermark);
+
+
+
+?>
