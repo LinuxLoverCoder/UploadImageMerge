@@ -2,7 +2,8 @@
 namespace APP\Model;
 class Usuario
 {
-    private $img;
+    private $img, $id;
+
 
     public function getImg() {
         return $this->img;
@@ -10,6 +11,14 @@ class Usuario
 
     public function setImg($img) {
         $this->img = $img;
+    }
+
+ public function getID() {
+        return $this->id;
+    }
+
+    public function setID($id) {
+        $this->id = $id;
     }
 
 

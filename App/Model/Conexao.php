@@ -9,7 +9,7 @@ class Conexao
     public static function getConn()
     {
         if (!isset(self::$instance)):
-            self::$instance = new \PDO('mysql:host=localhost;dbname=id19079412_projetoturma1a;', 'id19079412_root', 'nfQ$~GZj1kx2FR@J');
+            self::$instance = new \PDO('mysql:host=localhost;dbname=img;', 'root', '10152030');
         endif;
         return self::$instance;
     }
