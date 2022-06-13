@@ -39,49 +39,18 @@ $positionX = ($imageWidth / 2) - ($watermarkWidth / 2) ;
 $positionY = ($imageHeight / 2) - ($watermarkHeight / 2) ;
 
 //faz o merge das imagens
-//(int) $positionY
-//(int) $positionX
-imagecopymerge(
-    dst_image: $image,
-    src_image: $watermark,
-    dst_x: 0,
-    dst_y: 0,
-    src_x: -215,
-    src_y: 300,
-    src_width: 1280,
-    src_height: 1280,
-      pct: 55
-);       // (int)$positionX,
-//        (int)$positionY,
-
-//imagecopymerge(
-//  $image,
-//  $watermark,
-//  100 ,
-//  100,
-//  100,
-//  100 ,
-//  100 ,
-//  100,
-//    pct: 1
-//);
-
-
-
-//download da imagem
-
-
+imagecopy($image,
+    $watermark,
+    (int)$positionX,
+    (int)$positionY,
+    0,
+    0,
+    $watermarkWidth,
+    $watermarkHeight);
 
 //Imprime a imagem na pagina
 
 header("Content-Type: image/png");
-
-//echo $image;
-
 imagepng($image);
 imagedestroy($image);
 imagedestroy($watermark);
-
-
-
-
