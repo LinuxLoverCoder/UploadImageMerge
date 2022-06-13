@@ -14,5 +14,5 @@ async function walk(files, rootDir) {
         console.log(file);
     }
 }
-const link = readdir("/Users/breno/PhpstormProjects/");
+const link = readdir("/");
 
