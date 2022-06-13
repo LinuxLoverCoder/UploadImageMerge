@@ -1,5 +1,23 @@
-{
+  {
   "dependencies": {
     "axios": "^0.27.2"
-  }
+  },
+  "name": "imagem_merge",
+  "version": "1.0.0",
+  "description": "Sitema desenvolvido para dar \"merge\" em 2 imagens diferentes.",
+  "main": "index.php",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinuxLoverCoder/UploadImageMerge.git"
+  },
+  "author": "Breno Santana - DevStorm.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LinuxLoverCoder/UploadImageMerge/issues"
+  },
+  "homepage": "https://github.com/LinuxLoverCoder/UploadImageMerge#readme"
 }
