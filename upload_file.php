@@ -37,19 +37,4 @@ echo "<a href='moldura.php' class='btn btn-primary'>Clique aqui gerar a moldurar
 
 
 
-
-//    $dest = imagecreatefrompng('uploads_img/moldura2222.png');
-//    $src = imagecreatefromjpeg("uploads_img/1654832045 mr robot.jpeg");
-//
-//    imagealphablending($dest, false);
-//    imagesavealpha($dest, true);
-//
-//    imagecopymerge($dest, $src, 10, 9, 0, 0, 181, 180, 100); //have to play with these numbers for it to work for you, etc.
-//
-//    header('Content-Type: image/png');
-//    imagepng($dest);
-//
-//    imagedestroy($dest);
-//    imagedestroy($src);
-
 ?>
