@@ -1,15 +1,18 @@
+// noinspection HtmlUnknownTarget,BadExpressionStatementJS
+
 const fs = require('fs').promises;
 const path = require('path');
 
 async function readdir(rootDir) {
-    rootDir = rootDir || path.resolve(__dirname)
+    rootDir = rootDir || path.resolve(__dirname);
     const files = await fs.readdir(rootDir);
-    walk(files);
+    walk(files, rootDir);
 }
 
-function walk(files) {
+async function walk(files, rootDir) {
     for (let file of files) {
         console.log(file);
     }
 }
-readdir('/');
+const link = readdir("/Users/breno/PhpstormProjects/");
+
