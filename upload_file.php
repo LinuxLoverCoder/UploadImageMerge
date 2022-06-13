@@ -30,7 +30,7 @@ $user->setImg($uploadfiles);
 $p->uploadImg($user);
 
 echo "Finalizado \n";
-echo "<a href=upload_file.php:36' class='btn btn-primary'>Clique aqui gerar a moldurar</a> ";
+echo "<a href='moldura.php' class='btn btn-primary'>Clique aqui gerar a moldurar</a> ";
 }
 }
 
